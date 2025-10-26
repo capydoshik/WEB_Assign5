@@ -17,13 +17,14 @@
 
             <div class="search-container">
                 <input type="text" id="globalSearch" placeholder="Search iPhone, AirPods, MacBook...">
+
                 <ul id="suggestions"></ul>
+
                 <button id="searchBtn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
                 <audio id="searchSound" src="click.mp3" preload="auto"></audio>
-
             </div>
 
             <nav> 
@@ -33,6 +34,8 @@
         </header>
 
         <main>
+            <div id="progressBar"></div>
+
 
             <div class="main-text-container">
 
@@ -54,6 +57,21 @@
                         <p class="accordion-content">Visit the official Apple Store or authorized retailers.</p>
                     </div>
                     
+                </section>
+
+                <section class="stats-section">
+                    <div class="stat">
+                        <h2 class="count" data-target="5000">0</h2>
+                        <p>Happy Users</p>
+                    </div>
+                    <div class="stat">
+                        <h2 class="count" data-target="120">0</h2>
+                        <p>Products Available</p>
+                    </div>
+                    <div class="stat">
+                        <h2 class="count" data-target="98">0</h2>
+                        <p>Customer Reviews</p>
+                    </div>
                 </section>
 
             </div>

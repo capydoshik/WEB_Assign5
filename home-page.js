@@ -1,4 +1,4 @@
-/*FAQ and time*/ 
+/*FAQ*/ 
 document.addEventListener("DOMContentLoaded", () => {
   const accordionHeaders = document.querySelectorAll(".accordion-header");
   accordionHeaders.forEach(header => {
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /*Time*/ 
   function updateDateTime() {
 
     const now = new Date();
@@ -39,8 +40,6 @@ $(window).on("scroll", function() {
 
 /*Searching*/ 
 $(document).ready(function () {
-  console.log("jQuery is ready!");
-
   const products = [
     { name: "iPhone 14", link: "iphone.html" },
     { name: "iPhone 15", link: "iphone.html" },
@@ -87,3 +86,18 @@ $(document).ready(function () {
   });
 });
 
+// --- Animated Number Counter ---
+$('.count').each(function () {
+  $(this).prop('Counter', 0).animate(
+    {
+      Counter: $(this).data('target')
+    },
+    {
+      duration: 3000, 
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now)); 
+      }
+    }
+  );
+});
