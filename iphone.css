@@ -120,7 +120,7 @@ main {
 .buy-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #0071e3;
+    background-color: rgba(83, 79, 79, 0.6);
     color: white;
     border: none;
     border-radius: 30px;
@@ -129,7 +129,7 @@ main {
 }
 
 .buy-button:hover {
-    background: #005bb5;
+    background-color: rgba(95, 92, 92, 0.6);
 }
 
 /*Footer*/

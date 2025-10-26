@@ -6,37 +6,56 @@
         <meta name="viewport">
         <title>Apple</title>
         <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
 
     <body>
-        <script src="home-page.js"></script>
 
         <header>
+
             <div class="logo"><a href="home.html">Apple</a></div>
-            <nav> <a href="home.html">Home</a> <a href="iphone.html">iPhone</a> <a href="macbook.html">MacBook</a> <a
-                    href="airpods.html">AirPods</a> <a href="support.html"
-                    target="_blank">Support</a> </nav>
+
+            <div class="search-container">
+                <input type="text" id="globalSearch" placeholder="Search iPhone, AirPods, MacBook...">
+                <ul id="suggestions"></ul>
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <audio id="searchSound" src="click.mp3" preload="auto"></audio>
+
+            </div>
+
+            <nav> 
+                <a href="home.html">Home</a> <a href="iphone.html">iPhone</a> <a href="macbook.html">MacBook</a> <a href="airpods.html">AirPods</a> <a href="support.html" target="_blank">Support</a> 
+            </nav>
+
         </header>
 
         <main>
 
             <div class="main-text-container">
+
                 <h1>Welcome to the Apple Website</h1>
-                <p> Here you will find information about the latest Apple products: iPhone, MacBook, and AirPods. We create
-                    innovative technologies that make life easier and brighter. </p>
+                <p> Here you will find information about the latest Apple products: iPhone, MacBook, and AirPods. We create innovative technologies that make life easier and brighter. </p>
                 <p>Go to the sections to learn more about each product.</p>
 
                 <section id="faq">
+
                     <h1>Frequently Asked Questions</h1>
+
                     <div class="accordion-item">
                         <h3 class="accordion-header">How can I contact Apple Support?</h3>
                         <p class="accordion-content">You can contact us through the support webpage using contact number or providing email.</p>
                     </div>
+
                     <div class="accordion-item">
                         <h3 class="accordion-header">Where can I buy Apple products?</h3>
                         <p class="accordion-content">Visit the official Apple Store or authorized retailers.</p>
                     </div>
+                    
                 </section>
+
             </div>
 
         </main>
@@ -47,5 +66,9 @@
             <p id="dateTime"></p>
         </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+        <script src="home-page.js"></script>
+
     </body>
+
 </html>
