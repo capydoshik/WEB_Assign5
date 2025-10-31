@@ -119,6 +119,19 @@ main p {
   margin-bottom: 15px;
 }
 
+.support-text a[href*="gmail.com"] {
+  color: #9eceff;
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+.support-text a[href*="t.me"],
+.support-text a[href*="telegram.me"],
+.support-text a[href*="@"] {
+  color: #9eceff;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 /*Form*/
 form {
@@ -264,3 +277,5 @@ button.loading {
   margin-left: 8px;
   display: inline-block;
 }
+
+
