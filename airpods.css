@@ -1,145 +1,77 @@
-/*Body reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Import global Apple website styling */
+@import url("home.css");
 
-/*Body*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    background-color: #111;
-    background-image: url('https://bluescreen.kz/content/images/2024/06/overview__bcphzsdb4fpu_og.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+/* ----------------------------------------
+   AirPods Page Custom Styles
+---------------------------------------- */
 
-/*Header*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #2F3234;
-    border-bottom: 1px solid #444;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/*Navigation Bar*/
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 30px;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #bbbbbb;
-}
-
-/*Main*/
-main {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-main {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-/*Card*/
+/* Product Cards Grid */
 .product-card {
-    background: #1c1c1e;
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+  background: rgba(83, 79, 79, 0.6);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
+  background: rgba(95, 92, 92, 0.7);
 }
 
 .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .product-card h3 {
-    font-size: 22px;
-    margin: 10px 0;
-    color: #fff;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .product-card p {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 15px;
+  color: #ddd;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .price {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    color: #f5a623;
-    margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5a623;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .buy-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgba(83, 79, 79, 0.6);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: rgba(83, 79, 79, 0.6);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .buy-button:hover {
-    background-color: rgba(95, 92, 92, 0.6);
+  background-color: rgba(95, 92, 92, 0.8);
 }
 
-
-/*Footer*/
-footer {
-    background-color: #2F3234;
-    border-top: 1px solid #444;
-    padding: 10px 60px;
-    text-align: left;
-    color: #bbbbbb;
-    font-size: 12px;
+/* Active Link Highlight */
+.header-nav a.active {
+  color: #9eceff;
+  font-weight: 500;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

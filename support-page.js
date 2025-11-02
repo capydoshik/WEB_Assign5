@@ -98,3 +98,52 @@ $(".copy-btn").on("click", function () {
   });
 });
 
+
+/*Searching*/ 
+$(document).ready(function () {
+  const products = [
+    { name: "iPhone 14", link: "iphone.html" },
+    { name: "iPhone 15", link: "iphone.html" },
+    { name: "iPhone 16", link: "iphone.html" },
+    { name: "MacBook Air 2022", link: "macbook.html" },
+    { name: "MacBook Air 13 2024", link: "macbook.html" },
+    { name: "MacBook Air 13 2025", link: "macbook.html" },
+    { name: "AirPods Pro", link: "airpods.html" },
+    { name: "AirPods Pro 2", link: "airpods.html" },
+    { name: "AirPods 4", link: "airpods.html" }
+  ];
+
+  $("#globalSearch").on("input", function () {
+    const value = $(this).val().toLowerCase();
+    const matches = products.filter(p => p.name.toLowerCase().includes(value));
+
+    $("#suggestions").empty();
+
+    if (value && matches.length > 0) {
+      matches.forEach(p => {
+        $("#suggestions").append(`<li data-link="${p.link}">${p.name}</li>`);
+      });
+      $("#suggestions").show();
+    } else {
+      $("#suggestions").hide();
+    }
+  });
+
+  $("#suggestions").on("click", "li", function () {
+    const pageLink = $(this).data("link");
+    window.location.href = pageLink;
+  });
+
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".search-container").length) {
+      $("#suggestions").hide();
+    }
+  });
+
+  $("#searchBtn").on("click", function () {
+    const sound = $("#searchSound")[0];
+    sound.currentTime = 0;
+    sound.play(); 
+  });
+});
+

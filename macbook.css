@@ -1,144 +1,117 @@
-/*Body reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Import shared global Apple website styling */
+@import url("home.css");
 
-/*Body*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    background-color: #111;
-    background-image: url('https://bluescreen.kz/content/images/2024/06/overview__bcphzsdb4fpu_og.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+/* ----------------------------------------
+   MacBook Page Custom Styles
+---------------------------------------- */
 
-/*Header*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #2F3234;
-    border-bottom: 1px solid #444;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/*Navigation Bar*/
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 30px;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #bbbbbb;
-}
-
-/*Main*/
+/* Main Layout */
 main {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding: 60px 40px;
 }
 
-main {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-/*Card*/
+/* Product Card */
 .product-card {
-    background: #1c1c1e;
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+  background: rgba(83, 79, 79, 0.55);
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-8px);
+  background: rgba(95, 92, 92, 0.7);
 }
 
+/* Product Image */
 .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
+/* Product Title */
 .product-card h3 {
-    font-size: 22px;
-    margin: 10px 0;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
+/* Product Description */
 .product-card p {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 15px;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  height: 60px;
+  overflow: hidden;
 }
 
+/* Price */
 .price {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    color: #f5a623;
-    margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #f5a623;
+  margin-bottom: 15px;
+  display: block;
 }
 
+/* Buy Button */
 .buy-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgba(83, 79, 79, 0.6);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: rgba(83, 79, 79, 0.6);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-size: 15px;
 }
 
 .buy-button:hover {
-    background-color: rgba(95, 92, 92, 0.6);
+  background-color: rgba(95, 92, 92, 0.8);
 }
 
+/* Highlight current page link */
+.header-nav a[href*="macbook.html"] {
+  color: #9eceff;
+  font-weight: 500;
+}
 
-/*Footer*/
-footer {
-    background-color: #2F3234;
-    border-top: 1px solid #444;
-    padding: 10px 60px;
-    text-align: left;
-    color: #bbbbbb;
-    font-size: 12px;
+/* Responsive Design */
+@media (max-width: 992px) {
+  main {
+    padding: 40px 20px;
+    gap: 25px;
+  }
+
+  .product-card {
+    width: 45%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-card img {
+    width: 100%;
+  }
+
+  .product-card p {
+    height: auto;
+  }
 }

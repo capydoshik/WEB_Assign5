@@ -258,6 +258,7 @@ main p {
   margin-top: 80px;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
   transition: background 0.3s ease;
+  position: absolute;
 }
 
 .home-footer:hover {

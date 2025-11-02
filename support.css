@@ -1,95 +1,6 @@
-/*Body reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url("home.css");
 
-/*Body*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    background-color: #2F3234;
-    background-image: url('https://bluescreen.kz/content/images/2024/06/overview__bcphzsdb4fpu_og.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center 50%;
-    background-attachment: fixed;
-}
-
-/*Header*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #2F3234;
-    border-bottom: 1px solid #444;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-/*Navigation Bar*/
-.logo {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 30px;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #bbbbbb;
-}
-
-/*Main*/
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 100px auto;
-    padding: 0 20px;
-    gap: 40px;
-}
-
-main h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-main p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #dddddd;
-}
-
-.main-text-container {
-    background: rgba(83, 79, 79, 0.6);
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-}
-
-/*Support Webpage*/
+/* Main Layout */
 .support-container {
   display: flex;
   justify-content: space-between;
@@ -102,11 +13,13 @@ main p {
   border-radius: 25px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
+  flex-wrap: wrap;
 }
 
 .support-text {
   flex: 1;
   color: #fff;
+  min-width: 280px;
 }
 
 .support-text h1 {
@@ -119,12 +32,7 @@ main p {
   margin-bottom: 15px;
 }
 
-.support-text a[href*="gmail.com"] {
-  color: #9eceff;
-  font-weight: bold; 
-  text-decoration: none;
-}
-
+.support-text a[href*="gmail.com"],
 .support-text a[href*="t.me"],
 .support-text a[href*="telegram.me"],
 .support-text a[href*="@"] {
@@ -133,7 +41,11 @@ main p {
   text-decoration: none;
 }
 
-/*Form*/
+.support-text a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
 form {
   flex: 1;
   background: rgba(40, 40, 40, 0.8);
@@ -144,18 +56,21 @@ form {
   gap: 10px;
   width: 100%;
   max-width: 400px;
+  color: #fff;
 }
 
 form h2 {
   text-align: center;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 form label {
   font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 10px;
   border: none;
@@ -173,14 +88,14 @@ form button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
   background-color: #005bb5;
 }
 
-
-/* Contact button */
+/* Contact Us button */
 .open-form-btn {
   background-color: #0071e3;
   color: white;
@@ -206,54 +121,7 @@ form.show {
   animation: fadeIn 0.4s ease;
 }
 
-
-/*Footer*/
-.support-footer {
-    background-color: #2F3234;
-    border-top: 1px solid #444;
-    padding: 10px 60px;
-    text-align: left;
-    color: #bbbbbb;
-    font-size: 12px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-#dateTime {
-  font-size: 14px;
-  color: #bbbbbb;
-  margin-top: 5px;
-}
-
-
-/* Spinner inside Contact Us button */
-.spinner {
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-top: 3px solid #fff;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  animation: spin 0.8s linear infinite;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-button.loading {
-  background-color: #555 !important;
-  cursor: not-allowed;
-  opacity: 0.8;
-}
-
-
-/*Copy Button*/
+/* Copy Button */
 .copy-btn {
   margin-left: 10px;
   padding: 6px 10px;
@@ -278,4 +146,43 @@ button.loading {
   display: inline-block;
 }
 
+/* Spinner for loading state */
+.spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+button.loading {
+  background-color: #555 !important;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .support-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .open-form-btn {
+    align-self: center;
+  }
+}
