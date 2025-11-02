@@ -1,11 +1,5 @@
-/* Import global Apple website styling */
 @import url("home.css");
 
-/* ----------------------------------------
-   iPhone Page Custom Styles
----------------------------------------- */
-
-/* Product Cards Grid */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +13,7 @@ main {
   background: rgba(83, 79, 79, 0.55);
   border-radius: 20px;
   padding: 25px;
-  width: 280px; /* Corrected size for balance */
+  width: 280px;
   text-align: center;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, background 0.3s ease;

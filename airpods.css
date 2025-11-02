@@ -1,11 +1,5 @@
-/* Import global Apple website styling */
 @import url("home.css");
 
-/* ----------------------------------------
-   AirPods Page Custom Styles
----------------------------------------- */
-
-/* Product Cards Grid */
 .product-card {
   background: rgba(83, 79, 79, 0.6);
   border-radius: 20px;
