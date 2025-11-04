@@ -36,18 +36,16 @@ body {
 }
 
 /* Brand */
-.brand-name {
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: none;
+.brand-name i {
+  font-size: 45px;
   color: #ffffff;
   transition: color 0.3s ease;
-  letter-spacing: 0.5px;
 }
 
-.brand-name:hover {
+.brand-name:hover i {
   color: #9eceff;
 }
+
 
 /* Navigation */
 .header-nav {
@@ -175,11 +173,59 @@ body {
     padding: 0.5px;
   }
 
+  /* Group Apple icon + search bar in one row */
+  .home-header .col-12.col-md-3,
+  .home-header .col-12.col-md-6 {
+    width: 100%;
+  }
+
+  .home-header .col-12.col-md-3.text-center.text-md-start,
+  .home-header .col-12.col-md-6.d-flex.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-bottom: 1px;
+  }
+
+  /* Make Apple logo look good */
+  .brand-name i {
+    font-size: 38 px;
+    color: #fff;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .brand-name:hover i {
+    color: #9eceff;
+  }
+
+  /* Search bar next to logo */
+  .search-container {
+    flex: 1;
+    max-width: 80%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  #globalSearch {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  #searchBtn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* Navigation links stay below */
   .header-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 3px;
+    margin-top: 1px;
   }
 
   .header-nav a {
@@ -195,12 +241,6 @@ body {
 
   .header-nav a:hover i {
     color: #9eceff;
-  }
-
-
-  .search-container {
-    max-width: 90%;
-    margin: 5px auto;
   }
 }
 
@@ -281,7 +321,7 @@ main p {
 .home-footer {
   background-color: rgba(25, 25, 27, 0.95);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 0;
+  padding: 15px 0;
   color: #d1d1d1;
   font-size: 10px;
   backdrop-filter: blur(8px);

@@ -19,36 +19,35 @@
         <!-- Header -->
         <header class="home-header">
             <div class="container-fluid py-3 px-4">
-                <div class="row align-items-center gy-3">
+                <div class="row align-items-center gy-3 flex-md-nowrap flex-wrap">
 
-                    <!-- Logo -->
-                    <div class="col-12 col-md-3 text-center text-md-start">
-                        <a href="home.html" class="brand-name">Apple</a>
-                    </div>
-
-                    <!-- Search -->
-                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <!-- Logo + Search grouped for mobile -->
+                    <div class="col-12 col-md-9 d-flex justify-content-center justify-content-md-start align-items-center gap-2 flex-wrap flex-md-nowrap">
+                        <a href="index.html" class="brand-name" title="Apple">
+                            <i class="fa-brands fa-apple"></i>
+                        </a>
                         <div class="search-container">
                             <input type="text" id="globalSearch" placeholder="Search iPhone, AirPods, MacBook...">
                             <ul id="suggestions"></ul>
-                            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button id="searchBtn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <audio id="searchSound" src="click.mp3" preload="auto"></audio>
                         </div>
                     </div>
 
-                    <!-- Nav -->
+                    <!-- Navigation -->
                     <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end flex-wrap">
                         <nav class="header-nav">
-                            <a href="home.html">Home</a>
+                            <a href="index.html">Home</a>
                             <a href="iphone.html">iPhone</a>
                             <a href="macbook.html">MacBook</a>
                             <a href="airpods.html">AirPods</a>
                             <a href="support.html" target="_blank" title="Support">
                                 <i class="fa-solid fa-headphones"></i>
                             </a>
-
                         </nav>
                     </div>
-
                 </div>
             </div>
         </header>

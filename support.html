@@ -15,15 +15,13 @@
         <!-- Header (same as home.html) -->
         <header class="home-header">
             <div class="container-fluid py-3 px-4">
-                <div class="row align-items-center gy-3">
+                <div class="row align-items-center gy-3 flex-md-nowrap flex-wrap">
 
-                    <!-- Logo -->
-                    <div class="col-12 col-md-3 text-center text-md-start">
-                        <a href="index.html" class="brand-name">Apple</a>
-                    </div>
-
-                    <!-- Search Bar -->
-                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <!-- Logo + Search grouped for mobile -->
+                    <div class="col-12 col-md-9 d-flex justify-content-center justify-content-md-start align-items-center gap-2 flex-wrap flex-md-nowrap">
+                        <a href="index.html" class="brand-name" title="Apple">
+                            <i class="fa-brands fa-apple"></i>
+                        </a>
                         <div class="search-container">
                             <input type="text" id="globalSearch" placeholder="Search iPhone, AirPods, MacBook...">
                             <ul id="suggestions"></ul>
@@ -44,10 +42,8 @@
                             <a href="support.html" target="_blank" title="Support">
                                 <i class="fa-solid fa-headphones"></i>
                             </a>
-
                         </nav>
                     </div>
-
                 </div>
             </div>
         </header>
