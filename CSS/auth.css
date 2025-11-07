@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #2F3234 url('https://bluescreen.kz/content/images/2024/06/overview__bcphzsdb4fpu_og.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.auth-container {
+  background: rgba(83, 79, 79, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0071e3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+a {
+  color: #9eceff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#signup-msg, #login-msg {
+  font-size: 14px;
+  margin: 5px 0;
+}

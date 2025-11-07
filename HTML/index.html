@@ -36,7 +36,7 @@
                 <!-- Navigation -->
                 <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end flex-wrap">
                     <nav class="header-nav">
-                        <a href="../HTML/index.html">Home</a>
+                        <a href="../HTML/login.html">Account</a>
                         <a href="../HTML/iphone.html">iPhone</a>
                         <a href="../HTML/macbook.html">MacBook</a>
                         <a href="../HTML/airpods.html">AirPods</a>
@@ -91,6 +91,18 @@
                     <p>Customer Reviews</p>
                 </div>
             </section>
+
+            <!-- Apple iTunes API Section -->
+            <section id="itunes-section" class="mt-5 text-center">
+                <h1>Discover Apple Content</h1>
+                <p>Search for apps, music, or movies on iTunes:</p>
+                <div class="search-box mb-3">
+                    <input type="text" id="itunesQuery" placeholder="Type something (iPhone, Taylor Swift)">
+                    <button id="itunesSearchBtn">Search</button>
+                </div>
+                <div id="itunesResults" class="row justify-content-center"></div>
+            </section>
+
         </div>
     </main>
 
@@ -121,6 +133,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS/home-page.js"></script>
+    <script src="../JS/account-nav.js"></script>
+
 </body>
 
 </html>
