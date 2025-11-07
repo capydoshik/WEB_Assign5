@@ -1,11 +1,5 @@
-/* Import shared global Apple website styling */
 @import url("home.css");
 
-/* ----------------------------------------
-   MacBook Page Custom Styles
----------------------------------------- */
-
-/* Main Layout */
 main {
   display: flex;
   flex-wrap: wrap;

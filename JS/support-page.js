@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    console.log("jQuery is ready!");
-
     /*Form validation*/
     const form = $("#contactForm");
     const errorMessage = $("#error-message");
