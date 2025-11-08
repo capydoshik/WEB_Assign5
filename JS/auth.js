@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("loggedIn", "true");
         msg.style.color = "lightgreen";
         msg.textContent = "Login successful!";
-        setTimeout(() => (window.location.href = "index.html"), 1000);
+        setTimeout(() => (window.location.href = "../index.html"), 1000);
       } else {
         msg.style.color = "red";
         msg.textContent = "Invalid credentials.";
