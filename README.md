@@ -8,6 +8,7 @@ The site features smooth navigation, authentication (login/signup), and external
 > Link: https://capydoshik.github.io/WEB_Assign5
 
 ## Folder Structure
+'''
 Final_WEB/
 │
 ├── CSS/
@@ -34,7 +35,8 @@ Final_WEB/
 │ ├── support-page.js
 │
 ├── index.html
-└── README.md
+└── README.md 
+'''
 
 
 ## Features
