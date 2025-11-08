@@ -59,7 +59,7 @@ Final_WEB/
   - AirPods  
   - Support  
 - Each includes relevant visuals, product details, and responsive layout.
-- 
+  
 
 ### 🔹 Responsive Design
 - Fully mobile-friendly using **Bootstrap 5** grid system.
