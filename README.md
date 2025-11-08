@@ -73,7 +73,7 @@ This project uses the **Apple iTunes Search API** to display real Apple media co
 
 ## How to Run the Project
 
-# Option 1: Local Browser
+### Option 1: Local Browser
 
 Download or clone this repository.
 
@@ -82,7 +82,7 @@ Unzip the folder if necessary.
 Open index.html in your browser.
 
 
-# Option 2: VS Code (Recommended)
+### Option 2: VS Code (Recommended)
 
 Install Live Server extension in VS Code.
 
@@ -93,8 +93,8 @@ Browse all pages from the local server (paths load correctly).
 
 ## Authors
 
-# Ho San Team
-# Developed by:
+### Ho San Team
+### Developed by:
 
 Danyiar Ayazbaev
 Kenzhebek Alihan
