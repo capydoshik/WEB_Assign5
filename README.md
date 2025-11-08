@@ -5,7 +5,7 @@ The site features smooth navigation, authentication (login/signup), and external
 
 
 ##  Live Demo
-> Example: https://capydoshik.github.io/WEB_Assign5
+> Link: https://capydoshik.github.io/WEB_Assign5
 
 ## Folder Structure
 Final_WEB/
